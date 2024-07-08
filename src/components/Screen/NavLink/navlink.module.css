@@ -1,0 +1,38 @@
+.bodyContainer {
+    min-width: 80%;
+    max-width: 80%;
+    min-height: 52px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #d7d7d7;
+    border-radius: 30px;
+}
+
+.lista {
+    display: inherit;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 10px;
+}
+
+@media (max-width: 320px) {
+    .bodyContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lista {
+        flex-direction: column;
+    }
+}

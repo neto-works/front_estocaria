@@ -1,0 +1,12 @@
+.verticalText {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    writing-mode: vertical-rl;
+    white-space: nowrap;
+    text-orientation: upright;
+    font-size: 1.1em;
+    text-shadow: -2px 8px 13px rgba(0,0,0,0.93);
+}

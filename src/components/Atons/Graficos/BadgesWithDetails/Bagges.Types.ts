@@ -1,0 +1,1 @@
+export type BadgesWithDetailsProps = { tipo: "CRESCENTE" | "DECRESCENTE",porcentagem:number, numero:number }
