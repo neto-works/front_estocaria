@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import "../styles/globals.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import { cn } from "@/lib/utils"
-import Renderizador from "./renderizador";
+import { cn } from "@/lib/utils";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -16,7 +15,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="pt-Br">
       <body className={cn(`w-full h-full font-sans antialiased text-white`, fontSans.variable)}>
         <ToastContainer />
-        <Renderizador>{children}</Renderizador>
+        {children}
       </body>
     </html>
   );

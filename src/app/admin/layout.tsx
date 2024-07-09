@@ -1,8 +1,17 @@
+import { LayoutAdmin } from "@/components/Layouts";
+import { Footer, SideBar } from "@/components/Screen";
+import Link from "next/link";
+
 export default function AdminRootLayout({ children }: Readonly<{ children: React.ReactNode; }>) {
 
     return (
-        <div className="w-full h-full py-4">
+        <LayoutAdmin>
             {children}
-        </div>
+            <SideBar />
+            <Footer tituloPrimary="Parcerias" tituloSecondary="Contatos" tituloTertiary="Outros">
+                <Link className="link" href="">alguma coisa</Link>
+                <Link className="link" href="">alguma coisa</Link>
+            </Footer>
+        </LayoutAdmin>
     );
 }
