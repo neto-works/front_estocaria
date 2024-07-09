@@ -8,11 +8,8 @@ import React from "react";
 async function loadProdutos() { return await requestAllProdutos(); };
 export default async function Admin() {
     const session = await getServerSession();
+    if (!session) {redirect("/signin");}
     const produtos = await loadProdutos();
-
-    if (!session) {
-        redirect("/");
-    }
 
     return (
         <div className="w-full h-full my-3">

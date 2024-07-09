@@ -19,7 +19,7 @@ export const requestCreateUser = async (user: ICreateUser) => {
             if (error.response && error.response.status === 401) {
                 console.error("Erro 401: Não autorizado");
             }
-            throw error; // erro desconhecido, deu pau marco velho
+
         }
     }
 };

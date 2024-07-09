@@ -10,27 +10,26 @@ export interface IProduto {
     nome: string; descricao: string; preco: number; imagemUrl: string; quantEstoqueMin: number; quantEstoqueMax: number; categoriaId: number | null; estoqueId: number;
 }
 export const requestAllProdutos = async (): Promise<Produto[]> => {
-
-    try {
-
         const token = await getTokenDataBackend();
-
+        if(token === ""){
+            return []
+        }
         const response = await axios.get(URL_BACKEND + "/Produtos", {
             headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` }
         });
 
         return response.data;
-    } catch (error: any) {
-        if (error instanceof Error) {
-            throw new Error("Ocorreu um erro na requisição: " + error.message);
-        }
-        else {
-            if (error.response && error.response.status === 401) {
-                console.error("Erro 401: Não autorizado");
-            }
-            throw error; // erro desconhecido, deu pau marco velho
-        }
-    }
+    // } catch (error: any) {
+    //     if (error instanceof Error) {
+    //         throw new Error("Ocorreu um erro na requisição: " + error.message);
+    //     }
+    //     else {
+    //         if (error.response && error.response.status === 401) {
+    //             console.error("Erro 401: Não autorizado");
+    //         }
+    //         throw error; // erro desconhecido, deu pau marco velho
+    //     }
+    // }
 };
 
 export const requestPostProduto = async (produto: Produto) => {

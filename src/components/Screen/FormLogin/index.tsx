@@ -21,7 +21,7 @@ const LoginForm: React.FC = (): ReactNode => {
             });
 
             if (response?.error) {
-                toast.error("Credenciais invalidas! tente novamente com as credenciais certas: " + response.error);
+                toast.error("Credenciais invalidas! tente novamente com as credenciais certas vlw major");
                 router.push("/signin");
             } else if (response?.url) {
                 router.push(response.url);

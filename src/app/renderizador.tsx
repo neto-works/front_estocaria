@@ -10,7 +10,6 @@ const Renderizador: React.FC<IRenderizador> = ({ children }) => {
     const path = usePathname();
 
     const handleRenderLayout = () => {
-        console.log(path);
         if (path.includes("/admin")) {
             return (
                 <LayoutAdmin>
