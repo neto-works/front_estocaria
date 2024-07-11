@@ -1,9 +1,9 @@
 "use client";
 import { useRouter } from "next/navigation";
 import Styles from "./styles.module.css";
+import { SideBarProps } from "./sidebar.types"
 
-const Sidebar = () => {
-
+const Sidebar = ({ children }: SideBarProps) => {
   const route = useRouter();
 
   return (
@@ -86,13 +86,11 @@ const Sidebar = () => {
         <ul>
           <div className={`${Styles.bottom}`}>
             <li id={`${Styles.nohover}`}>
-              <a onClick={() => { }}>
+              <a>
                 <span className={`${Styles.icon}`}>
                   <i className="bi bi-box-arrow-left"></i>
                 </span>
-                <span className={`${Styles.text}`}>
-                  Sair
-                </span>
+                {children}
               </a>
             </li>
           </div>

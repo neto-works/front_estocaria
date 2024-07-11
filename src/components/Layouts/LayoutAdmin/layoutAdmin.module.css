@@ -1,0 +1,21 @@
+.layoutadmin {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 200px 11fr;
+    grid-template-rows: 90% 10%;
+    grid-template-areas: "aside content"
+                         "footer footer";
+}
+
+.aside {
+    grid-area: aside;
+}
+
+.main {
+    grid-area: content;
+}
+
+.footer {
+    grid-area: footer;
+}

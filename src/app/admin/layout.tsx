@@ -1,17 +1,16 @@
 import { LayoutAdmin } from "@/components/Layouts";
 import { Footer, SideBar } from "@/components/Screen";
-import Link from "next/link";
+import ButtonLogout from "./buttonlogout";
 
 export default function AdminRootLayout({ children }: Readonly<{ children: React.ReactNode; }>) {
 
     return (
         <LayoutAdmin>
+            <SideBar>
+                <ButtonLogout />
+            </SideBar>
             {children}
-            <SideBar />
-            <Footer tituloPrimary="Parcerias" tituloSecondary="Contatos" tituloTertiary="Outros">
-                <Link className="link" href="">alguma coisa</Link>
-                <Link className="link" href="">alguma coisa</Link>
-            </Footer>
-        </LayoutAdmin>
+            <Footer />
+        </LayoutAdmin >
     );
 }

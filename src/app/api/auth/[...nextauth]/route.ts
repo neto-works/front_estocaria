@@ -7,6 +7,7 @@ import { decoderTokenToClaims } from "@/services/auth/decode-claims";
 const handler = NextAuth({
     pages: {
         signIn: "/signin",
+        signOut:"/"
     },
     providers: [
         CredentialsProvider({

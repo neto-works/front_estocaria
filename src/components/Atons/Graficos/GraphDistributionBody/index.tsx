@@ -3,6 +3,7 @@ import React, { ReactNode } from 'react';
 import { Area, AreaChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import { GraphDistributionBodyProps, data } from './GraphDistributionBody.Types';
 
+
 const GraphDistributionBody: React.FC<GraphDistributionBodyProps> = ({ }): ReactNode => {
 
   return (

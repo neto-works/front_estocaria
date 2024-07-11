@@ -1,8 +1,6 @@
 "use client";
-import { IProduto } from '@/services/produtos/request-api';
+import { IProduto } from '@/services/produtos/request.types';
 import { useRouter } from 'next/navigation';
-
-// import { toast } from 'react-toastify';
 
 import React, { FormEvent, ReactNode } from 'react';
 
@@ -23,10 +21,7 @@ const FormProduto: React.FC = (): ReactNode => {
             estoqueId: parseInt(formData.get("estoqueId") as string, 10),
         };
         try {
-            const response = await fetch('/api/postProduto', {
-                method: 'POST', headers: {
-                    'Content-Type': 'application/json'
-                }
+            const response = await fetch('/api/postProduto', {method: 'POST', headers: {'Content-Type': 'application/json'}
                 , body: JSON.stringify(produto)
             });
 

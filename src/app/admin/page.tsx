@@ -4,26 +4,23 @@ import { redirect } from "next/navigation";
 import { BodySeparator, ButtonStyled, CardSummaryTitle, SearchInput, SpaceX10, TitleSeparator, TrSumammary } from "@/components/Atons";
 import {VerticalBar } from "@/components/Screen";
 import React from "react";
-import Link from "next/link";
-import { LayoutAdmin, LayoutBase } from "@/components/Layouts";
 
 async function loadProdutos() { return await requestAllProdutos(); };
 export default async function Admin() {
     const session = await getServerSession();
-    if (!session) { redirect("/signin"); }
     const produtos = await loadProdutos();
+    if (!session || produtos === null) { redirect("/signin"); }
 
     return (
-        <div className="w-full h-full my-3">
-            <SpaceX10 />
+        <div className="w-full h-auto relative px-5">
             <VerticalBar>
                 <SearchInput />
                 <SpaceX10 />
                 <ButtonStyled />
             </VerticalBar>
-            <div className="w-full h-full rounded p-10 my-10 bg-padrao-claro">
+            <div className="w-full h-auto rounded p-10 my-7 bg-padrao-claro">
                 <div className="relative overflow-hidden shadow-md rounded-lg">
-                    <table className="table-fixed w-full text-left">
+                    <table className="table w-full text-left">
                         <CardSummaryTitle>
                             <TitleSeparator title="Nome" />
                             <TitleSeparator title="Preço" />
@@ -36,7 +33,7 @@ export default async function Admin() {
                         </CardSummaryTitle>
                         <tbody>
                             {
-                                produtos.map((produto, index) => (
+                                produtos?.map((produto, index) => (
                                     <React.Fragment key={index}>
                                         <TrSumammary>
                                             <BodySeparator title={produto.nome} isLink={true} rota={`/admin/${produto.nome}`} />

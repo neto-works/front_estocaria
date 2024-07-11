@@ -1,5 +1,5 @@
 import { SpaceX10 } from "@/components/Atons";
-import FormProduto from "@/components/Screen/FormCreateProduto";
+import FormProduto from "@/components/Screen/Forms/FormCreateProduto";
 import { getServerSession } from "next-auth";
 import { redirect } from "next/navigation";
 
