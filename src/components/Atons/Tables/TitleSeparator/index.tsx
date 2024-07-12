@@ -1,6 +1,6 @@
 "use client";
 import React, { ReactNode, useState } from 'react';
-import { TitleSeparatorProps } from './TitleSeparator.Types';
+import { TitleSeparatorProps } from './titleseparator.types';
 //import Styles from "./tilestyle.module.css";
 
 const TitleSeparator: React.FC<TitleSeparatorProps> = ({ title }): ReactNode => {

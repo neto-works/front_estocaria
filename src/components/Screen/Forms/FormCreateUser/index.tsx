@@ -1,8 +1,8 @@
 "use client";
 import { ButtonGeneric } from '@/components/Atons';
 import React, { ChangeEvent, ReactNode, SyntheticEvent, useEffect, useState } from 'react';
-import { FormCreateUserState, initUserState } from './FormCreateUser.Types';
-import { ICreateUser, requestCreateUser } from '@/services/usuarios/requests-api';
+import { FormCreateUserState, initUserState } from './formcreateuser.types';
+import { ICreateUser, requestCreateUser } from '@/project/usuarios/requests-api';
 import { useRouter } from 'next/navigation';
 
 const FormCreateUser: React.FC = (): ReactNode => {

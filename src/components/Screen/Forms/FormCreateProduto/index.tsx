@@ -1,5 +1,5 @@
 "use client";
-import { IProduto } from '@/services/produtos/request.types';
+import { IProduto } from '@/project/produtos/request.types';
 import { useRouter } from 'next/navigation';
 
 import React, { FormEvent, ReactNode } from 'react';

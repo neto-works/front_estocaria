@@ -1,7 +1,7 @@
 "use client";
 import React, { ReactNode } from 'react';
 import { Area, AreaChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
-import { GraphDistributionBodyProps, data } from './GraphDistributionBody.Types';
+import { GraphDistributionBodyProps, data } from './graphdistributionbody.types';
 
 
 const GraphDistributionBody: React.FC<GraphDistributionBodyProps> = ({ }): ReactNode => {

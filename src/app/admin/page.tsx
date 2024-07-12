@@ -1,9 +1,9 @@
-import { requestAllProdutos } from "@/services/produtos/request-api";
 import { getServerSession } from "next-auth";
 import { redirect } from "next/navigation";
 import { BodySeparator, ButtonStyled, CardSummaryTitle, SearchInput, SpaceX10, TitleSeparator, TrSumammary } from "@/components/Atons";
 import {VerticalBar } from "@/components/Screen";
 import React from "react";
+import { requestAllProdutos } from "@/project/produtos/request-api";
 
 async function loadProdutos() { return await requestAllProdutos(); };
 export default async function Admin() {

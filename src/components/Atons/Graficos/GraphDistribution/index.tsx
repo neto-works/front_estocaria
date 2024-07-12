@@ -1,8 +1,8 @@
 "use client";
 import React, { ReactNode, useState } from 'react';
-import { GrapdDistributionProps } from './GrapdDistribution.Types';
+import { GrapdDistributionProps } from './grapddistribution.types';
 import CustomIcon from '../../Icons/CustomIcon';
-import { Icon } from '../../Icons/CustomIcon/CustomIcon.Types';
+import { Icon } from '../../Icons/CustomIcon/customIcon.types';
 import GraphDistributionBody from '../GraphDistributionBody';
 
 

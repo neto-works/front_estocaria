@@ -3,10 +3,11 @@ import BadgesWithDetails from "@/components/Atons/Graficos/BadgesWithDetails";
 import CardAnalitsc from "@/components/Atons/Cards/CardAnalitcs";
 import GrapdDistribution from "@/components/Atons/Graficos/GraphDistribution";
 import GridAminCards from "@/components/Layouts/GridAminCards";
-import { Icon } from "@/components/Atons/Icons/CustomIcon/CustomIcon.Types";
-import { Dados, requestRelatorio } from "@/services/relatorios/request-api";
+import {requestRelatorio } from "@/project/relatorios/request-api";
 import { getServerSession } from "next-auth";
 import { redirect } from "next/navigation";
+import { Dados } from "@/project/relatorios/request.types";
+import { Icon } from "@/components/Atons/Icons";
 
 async function loadRelatorios(email: string): Promise<void> {
     const data: Dados = { relatorioName: "Default", dataInicio: new Date("2020-07-08"), dataFim: new Date("2024-07-08"),

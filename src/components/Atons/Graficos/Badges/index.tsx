@@ -1,6 +1,6 @@
 "use client";
 import React, { ReactNode, useState } from 'react';
-import { BadgesProps } from './Bagges.Types';
+import { BadgesProps } from './bagges.types';
 import { CustomIcon, Icon } from '../../Icons';
 
 

@@ -1,6 +1,6 @@
 "use client";
-import React, { ReactNode, use } from 'react';
-import { BodySeparatorProps } from './BodySeparator.Types';
+import React, { ReactNode } from 'react';
+import { BodySeparatorProps } from './bodyseparator.types';
 import Link from 'next/link';
 const BodySeparator: React.FC<BodySeparatorProps> = ({ title, isLink, rota }): ReactNode => {
 

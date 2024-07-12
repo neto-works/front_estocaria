@@ -1,6 +1,6 @@
 "use client";
 import { Component } from "react";
-import { IButtonGenericProps, IButtonGenericState } from "./ButtonGeneric.Types";
+import { IButtonGenericProps, IButtonGenericState } from "./buttongeneric.types";
 
 export default class ButtonGeneric extends Component<IButtonGenericProps, IButtonGenericState> {
     constructor(props: IButtonGenericProps) {

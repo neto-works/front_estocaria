@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { requestPostProduto } from '@/services/produtos/request-api';
+import { requestPostProduto } from '@/project/produtos/request-api';
 
 export async function POST(req: NextRequest) {
     if (req.method !== 'POST') {

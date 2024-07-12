@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { CardSummaryProps } from './CardSummary.Types';
+import { CardSummaryProps } from './cardsummary.types';
 
 const CardSummary: React.FC<CardSummaryProps> = ({value}): ReactNode => {
 

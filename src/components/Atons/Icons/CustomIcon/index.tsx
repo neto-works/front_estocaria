@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { CustomIconProps, Icon } from './CustomIcon.Types';
+import { CustomIconProps, Icon } from './customIcon.types';
 import { Activity, ChevronDown, ChevronsDown, ChevronsUp, ChevronUp, TrendingDown, TrendingUp, UsersRound, Waypoints } from 'lucide-react';
 
 const CustomIcon: React.FC<CustomIconProps> = ({ icon }): ReactNode => {

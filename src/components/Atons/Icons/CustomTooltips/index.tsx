@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/tooltip"
 
 import React, { ReactNode, useState } from 'react';
-import { CustomTooltipsProps } from './CustomTooltips.Types';
+import { CustomTooltipsProps } from './customtooltips.types';
 import { Info } from "lucide-react";
 
 

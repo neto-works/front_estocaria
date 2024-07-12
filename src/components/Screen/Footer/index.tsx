@@ -1,6 +1,6 @@
 "use client";
 import React, { ReactNode, useState } from 'react';
-import FooterLayer from './footerLayer';
+import FooterLayer from './FooterLayer';
 import Link from 'next/link';
 
 

@@ -1,6 +1,6 @@
 "use client";
 import React, { ReactNode, useState } from 'react';
-import { CardAnaliticsProps } from './CardAnalitics.Types';
+import { CardAnaliticsProps } from './cardanalitics.types';
 import CustomIcon from '../../Icons/CustomIcon';
 import CustomTooltips from '../../Icons/CustomTooltips';
 //import Styles from "./cardanalitcs.module.css";

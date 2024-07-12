@@ -1,4 +1,4 @@
-import { Icon } from "../../Icons/CustomIcon/CustomIcon.Types";
+import { Icon } from "../../Icons/CustomIcon/customIcon.types";
 
 export type CardAnaliticsProps = {
     icon: Icon;

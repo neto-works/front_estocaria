@@ -9,5 +9,5 @@ export default function ButtonLogout() {
         await signOut();
     }
 
-    return <button className="bg-green" onClick={handleLogout}>Logout</button>
+    return <button onClick={handleLogout}>Logout</button>
 }

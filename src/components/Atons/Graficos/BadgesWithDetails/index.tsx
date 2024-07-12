@@ -1,6 +1,6 @@
 "use client";
 import React, { ReactNode, useState } from 'react';
-import { BadgesWithDetailsProps } from './Bagges.Types';
+import { BadgesWithDetailsProps } from './bagges.types';
 import { CustomIcon, Icon } from '../../Icons';
 
 const BadgesWithDetails: React.FC<BadgesWithDetailsProps> = ({ tipo,porcentagem, numero }): ReactNode => {

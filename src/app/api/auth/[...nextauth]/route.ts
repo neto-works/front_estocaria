@@ -1,8 +1,8 @@
 import NextAuth from "next-auth/next";
 import CredentialsProvider from "next-auth/providers/credentials";
-import { IAuthenticateUser, requestAuthenticationUser } from "@/services/auth/requests-api";
+import { IAuthenticateUser, requestAuthenticationUser } from "@/project/auth/requests-api";
 import { cookies } from "next/headers";
-import { decoderTokenToClaims } from "@/services/auth/decode-claims";
+import { decoderTokenToClaims } from "@/project/auth/decode-claims";
 
 const handler = NextAuth({
     pages: {

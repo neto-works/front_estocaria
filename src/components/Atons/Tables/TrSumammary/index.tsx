@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
-import { TrSumammaryProps } from './TrSumammary.Types';
-import { generateUniqueKey } from '@/services/geratorkeys/gerator-keys';
+import { TrSumammaryProps } from './trsumammary.types';
+import { generateUniqueKey } from '@/project';
 
 const TrSumammary: React.FC<TrSumammaryProps> = ({ children }): ReactNode => {
 
